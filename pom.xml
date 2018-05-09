@@ -13,6 +13,7 @@
         <module>ProxyPattern</module>
         <module>SingletonPattern</module>
         <module>MultitionPattern</module>
+        <module>FactoryMethodPattern</module>
     </modules>
 
     <name>dessign-pattern</name>
