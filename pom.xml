@@ -16,6 +16,7 @@
         <module>FactoryMethodPattern</module>
         <module>AbstractFactoryPattern</module>
         <module>FacadePattern</module>
+        <module>AdapterPattern</module>
     </modules>
 
     <name>dessign-pattern</name>
