@@ -15,6 +15,7 @@
         <module>MultitionPattern</module>
         <module>FactoryMethodPattern</module>
         <module>AbstractFactoryPattern</module>
+        <module>FacadePattern</module>
     </modules>
 
     <name>dessign-pattern</name>
