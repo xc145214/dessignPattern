@@ -14,7 +14,8 @@ public class App {
         h1.run(); //汽车跑起来了；
 
         //客户开H2型号，出去玩耍了
-        HummerModel h2 = new HummerH2Model();
+        HummerH2Model h2 = new HummerH2Model();
+        h2.setAlarmFlag(true);
         h2.run();
     }
 }

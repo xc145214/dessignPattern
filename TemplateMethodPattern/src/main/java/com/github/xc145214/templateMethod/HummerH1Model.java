@@ -21,5 +21,8 @@ public class HummerH1Model extends HummerModel {
         System.out.println("悍马H1引擎声音是这样在...");
     }
 
-
+    @Override
+    protected boolean isAlarm() {
+        return false;
+    }
 }
