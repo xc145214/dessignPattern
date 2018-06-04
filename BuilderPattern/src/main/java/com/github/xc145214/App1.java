@@ -9,7 +9,7 @@ import java.util.ArrayList;
  *
  * @author xiac
  */
-public class App {
+public class App1 {
     public static void main(String[] args) {
         /**
          * 客户告诉牛叉公司，我要这样一个模型，然后牛叉公司就告诉我老大
