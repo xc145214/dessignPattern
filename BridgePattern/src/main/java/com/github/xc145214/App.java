@@ -1,6 +1,8 @@
 package com.github.xc145214;
 
+import com.github.xc145214.bridge.Clothes;
 import com.github.xc145214.bridge.ClothesCorp;
+import com.github.xc145214.bridge.House;
 import com.github.xc145214.bridge.HouseCorp;
 
 /**
@@ -10,12 +12,12 @@ public class App {
     public static void main(String[] args) {
         System.out.println("-------房地产公司是这个样子运行的-------");
         //先找到我的公司
-        HouseCorp houseCorp = new HouseCorp();
+        HouseCorp houseCorp = new HouseCorp(new House());
         //看我怎么挣钱
         houseCorp.makeMoney();
         System.out.println("\n");
         System.out.println("-------服装公司是这样运行的-------");
-        ClothesCorp clothesCorp = new ClothesCorp();
+        ClothesCorp clothesCorp = new ClothesCorp(new Clothes());
         clothesCorp.makeMoney();
     }
 }
