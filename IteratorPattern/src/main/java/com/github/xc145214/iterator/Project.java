@@ -1,10 +1,17 @@
 package com.github.xc145214.iterator;
 
+import java.util.ArrayList;
+
 /**
  * @author xiac xc145214@gmail.com
  * @date 2018/6/7 0007 22:40
  */
 public class Project implements IProject {
+    public Project() {
+    }
+
+    //定义一个项目列表，说有的项目都放在这里
+    private ArrayList<IProject> projectList = new ArrayList<IProject>();
 
     //项目名称
     private String name = "";
@@ -14,11 +21,17 @@ public class Project implements IProject {
     private int cost = 0;
 
     //定义一个构造函数，把所有老板需要看到的信息存储起来
-    public Project(String name, int num, int cost) {
+    private Project(String name, int num, int cost) {
 //赋值到类的成员变量中
         this.name = name;
         this.num = num;
         this.cost = cost;
+    }
+
+    //增加项目
+    @Override
+    public void add(String name, int num, int cost) {
+        this.projectList.add(new Project(name, num, cost));
     }
 
 
@@ -32,5 +45,11 @@ public class Project implements IProject {
         //项目费用
         info = info + "\t 项目费用：" + this.cost;
         return info;
+    }
+
+    //产生一个遍历对象
+    @Override
+    public IProjectIterator iterator() {
+        return new ProjectIterator(this.projectList);
     }
 }
