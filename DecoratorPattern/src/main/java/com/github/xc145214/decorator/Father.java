@@ -8,13 +8,13 @@ package com.github.xc145214.decorator;
 public class Father {
 
     public static void main(String[] args) {
-        //成绩单拿过来
-        SchoolReport schoolReport = new FouthGradeSchoolReport();
-
+        //美化过的成绩单拿过来
+//        SchoolReport sr= new FouthGradeSchoolReport();
+        SchoolReport sr = new SugarFouthGradeSchoolReport();
         //看成绩单
-        schoolReport.report();
-
-        //签名休想
+        sr.report();
+        //然后老爸，一看，很开心，就签名了
+        sr.sign("老三"); //我叫小三，老爸当然叫老三
 
     }
 }
