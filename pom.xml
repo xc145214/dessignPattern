@@ -24,6 +24,7 @@
         <module>CommandPattern</module>
         <module>DecoratorPattern</module>
         <module>IteratorPattern</module>
+        <module>ObserverPattern</module>
     </modules>
 
     <name>dessign-pattern</name>
