@@ -25,6 +25,7 @@
         <module>IteratorPattern</module>
         <module>ObserverPattern</module>
         <module>ResponsibilityChainPattern</module>
+        <module>VisitorPatter</module>
     </modules>
 
     <name>dessign-pattern</name>
