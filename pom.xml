@@ -26,6 +26,7 @@
         <module>ObserverPattern</module>
         <module>ResponsibilityChainPattern</module>
         <module>VisitorPatter</module>
+        <module>StatePattern</module>
     </modules>
 
     <name>dessign-pattern</name>
